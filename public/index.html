@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Nuestro Chat Privado</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #efeae2; margin: 0; padding: 20px; }
+        #chat-box { width: 100%; max-width: 500px; height: 400px; background: white; border: 1px solid #ccc; overflow-y: scroll; padding: 10px; margin-bottom: 10px; border-radius: 8px; }
+        .msg { padding: 8px; margin: 5px 0; border-radius: 5px; max-width: 80%; }
+        .enviado { background: #d9fdd3; margin-left: auto; text-align: right; }
+        .recibido { background: white; }
+        #input-box { display: flex; max-width: 520px; }
+        input { flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+        button { padding: 10px; background: #00a884; color: white; border: none; border-radius: 4px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h2>?? Nuestro Chat Privado</h2>
+    <div id="chat-box"></div>
+    <div id="input-box">
+        <input type="text" id="txt-mensaje" placeholder="Escribe un mensaje...">
+        <button id="btn-enviar">Enviar</button>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
